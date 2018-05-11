@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+	{%if author_detail%}
+		<h1><a href=''>{{author_detail.firstname}}{{author_detail.lastname}}</a>
+
+		<p>Firstname: {{author_detail.firstname}}</p>
+		<p>Lastname: {{author_detail.lastname}}</p>
+		<p>DataofBirth: {{author_detail.dateofbirth}}</p>
+	{%endif%}
+{%endblock%}

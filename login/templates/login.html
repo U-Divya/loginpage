@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block content%}
+<div class="row">
+<div class="col s12 m6 offset-m3">
+<h1>{{title}}</h1>
+<form method="POST" action='' enctype = 'multipart/form-data'>{%csrf_token%}
+{{form.as_p}}
+<button class="btn waves-effect waves-light" type="submit">{{title}}</button>
+</form>
+</div>
+</div>
+{% endblock content %}

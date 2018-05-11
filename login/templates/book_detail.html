@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+	{%if book_detail%}
+
+		<h1>Title:{{book_detail.title}}</h1>
+		<p><strong>Author:</strong><a href=''>{{book_detail.author}}</a></p>
+		<p><strong>Summary:</strong>{{book_detail.summary}}</p>
+		
+	{%endif%}
+{%endblock%}
